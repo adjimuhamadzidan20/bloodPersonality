@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="adjimuhamadzidan">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Blood Personality</title>
+</head>
+<body>
+    <div class="container-sm p-3 mt-4">
+        <!-- txt judul -->
+        <div class="title text-center mb-4">
+            <h1>Blood Personality</h1>
+            <p>Mengecek Kepribadian Seseorang Berdasarkan Jenis Golongan Darah</p>
+        </div>
+        <form class="p-4 input-sm">
+            <div class="row">
+                <!-- input nama user  -->
+                <div class="col mb-3">
+                    <label for="nama" class="form-label">Masukan Nama Anda</label>
+                    <input type="text" class="form-control" placeholder="Masukan Nama" id="nama">
+                </div>
+                
+                <!-- input memilih jenis goldar -->
+                <div class="col goldar mb-4">
+                    <label for="goldar" class="form-label">Pilih Golongan Darah</label>
+                    <select class="form-select text-muted" aria-label="Default select example" id="goldar">
+                        <option selected>Golongan Darah</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                    </select>
+                    <div id="emailHelp" class="form-text">Pilih Berdasarkan Jenis Golongan Darah Anda.</div>
+                </div>
+            </div>
+
+            <!-- button proses setelah mengklik button check -->
+            <button class="btn btn-primary mx-auto" type="button" enabled id="button-ck">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+            </button>
+
+            <!-- button submit (check) -->
+            <div class="check d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary" id="check">Check</button>
+            </div>   
+        </form>
+
+        <!-- section output/hasil -->
+        <div class="output-sm border p-4">
+            <p>Nama <span class="nama"></span></p>
+            <p>Golongan Darah <span class="jenis-goldar"></span> :</p>
+            <div class="hasil"></div>
+
+            <!-- button mengulang kembali ke awal (kembali) -->
+            <div class="kembali d-flex justify-content-center mt-4">
+                <button type="submit" class="btn btn-primary" id="kembali">Mulai Kembali</button>
+            </div>   
+        </div>
+
+        <!-- section penutup ketika tidak mengulang kembali ke awal -->
+        <div class="output-terimakasih border p-4">
+            <p class="terimakasih"></p>
+        </div>
+
+    </div>
+ 
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
