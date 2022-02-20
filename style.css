@@ -3,24 +3,58 @@
     padding: 0;
 }
 
+body {
+    background-image: url(sativa.png);
+    /* background-size: contain; */
+    background-position: center;
+}
+
 .container-sm {
     width: 800px;
-    /* background-color: azure; */
+    /* background-color: white; */
+    color: #2f3542; 
 }
-.container-sm form {
-    border: 1px solid lightgrey;
+
+.container-sm .title h1 {
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: #30336b;
+    box-shadow: 0 0 0 0.2rem rgba(19, 15, 64, 0.25);
+}
+
+.form-select:focus {
+    border-color: #30336b;
+    box-shadow: 0 0 0 0.2rem rgba(19, 15, 64, 0.25);
+}
+
+.form-select:hover {
+    cursor: pointer;
 }
 
 .container-sm form .btn, .output-sm button  {
     width: 200px;
+    background-color: #30336b;
+    border-color: #30336b;
 }
 
-.output-sm, .output-terimakasih {
+.container-sm form .btn:hover {
+    background-color: #130f40;
+}
+
+.output-sm button:hover {
+    background-color: #130f40;
+    border-color: #30336b;
+}
+
+.output-sm, .output-terimakasih, #button-ck {
     display: none;
 }
 
-#button-ck {
-    display: none;
+.fa-user, .fa-briefcase-medical {
+    margin-right: 12px;
+    color: #2f3542; ;
 }
 
 /* responsive */
@@ -33,5 +67,15 @@
 @media screen and (max-width: 576px) {
     .container-sm {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form-label {
+        font-size: 15px;
+    }
+
+    .form-text {
+        font-size: 13px;
     }
 }
