@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="adjimuhamadzidan">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Blood Personality</title>
 </head>
 <body>
-    <div class="container-sm p-3 mt-4">
+    <div class="container-sm p-3 mt-5 mb-5">
         <!-- txt judul -->
         <div class="title text-center mb-4">
             <h1>Blood Personality</h1>
@@ -20,13 +21,14 @@
             <div class="row">
                 <!-- input nama user  -->
                 <div class="col mb-3">
-                    <label for="nama" class="form-label">Masukan Nama Anda</label>
+                    <label for="nama" class="form-label"><i class="fas fa-user"></i>Masukan Nama Anda</label>
                     <input type="text" class="form-control" placeholder="Masukan Nama" id="nama">
+                    <div id="emailHelp" class="form-text">* Boleh Nama Lengkap Atau Singkat.</div>
                 </div>
                 
                 <!-- input memilih jenis goldar -->
                 <div class="col goldar mb-4">
-                    <label for="goldar" class="form-label">Pilih Golongan Darah</label>
+                    <label for="goldar" class="form-label"><i class="fa-solid fa-briefcase-medical"></i>Pilih Golongan Darah</label>
                     <select class="form-select text-muted" aria-label="Default select example" id="goldar">
                         <option selected>Golongan Darah</option>
                         <option value="A">A</option>
@@ -34,7 +36,7 @@
                         <option value="AB">AB</option>
                         <option value="O">O</option>
                     </select>
-                    <div id="emailHelp" class="form-text">Pilih Berdasarkan Jenis Golongan Darah Anda.</div>
+                    <div id="emailHelp" class="form-text">* Pilih Berdasarkan Jenis Golongan Darah Anda.</div>
                 </div>
             </div>
 
@@ -51,9 +53,9 @@
         </form>
 
         <!-- section output/hasil -->
-        <div class="output-sm border p-4">
-            <p>Nama <span class="nama"></span></p>
-            <p>Golongan Darah <span class="jenis-goldar"></span> :</p>
+        <div class="output-sm p-4">
+            <p><i class="fas fa-user"></i> <span class="nama"></span></p>
+            <p><i class="fa-solid fa-briefcase-medical"></i>Golongan Darah <span class="jenis-goldar"></span> :</p>
             <div class="hasil"></div>
 
             <!-- button mengulang kembali ke awal (kembali) -->
@@ -63,10 +65,9 @@
         </div>
 
         <!-- section penutup ketika tidak mengulang kembali ke awal -->
-        <div class="output-terimakasih border p-4">
+        <div class="output-terimakasih p-4">
             <p class="terimakasih"></p>
         </div>
-
     </div>
  
     <script src="js/bootstrap.bundle.min.js"></script>
