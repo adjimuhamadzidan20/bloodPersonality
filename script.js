@@ -45,7 +45,7 @@ check.addEventListener('click', (e) => {
                 situasi apapun. Sayangnya, ada sifat yang membuat orang dengan golongan 
                 darah A ini cenderung tidak disukai, yaitu sifat keras kepala dan perfeksionisnya.`;
                 A.style.textAlign = 'justify';
-                A.style.lineHeight = '22px';
+                A.style.lineHeight = '24px';
                 A.style.fontFamily = '"Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif';
             }
                 
@@ -60,7 +60,7 @@ check.addEventListener('click', (e) => {
                 aturan dan ide mereka sendiri. Beberapa orang dengan golongan darah B ini juga cenderung individualis dan 
                 lebih mementingkan logika daripada perasaannya.`;
                 B.style.textAlign = 'justify';
-                B.style.lineHeight = '22px';
+                B.style.lineHeight = '24px';
                 B.style.fontFamily = '"Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif';
             }
 
@@ -76,7 +76,7 @@ check.addEventListener('click', (e) => {
                 karena rasa empatinya yang tinggi terhadap situasi orang lain. Bahkan, mereka tidak keberatan membantu 
                 orang lain selama mereka mampu.`;
                 AB.style.textAlign = 'justify';
-                AB.style.lineHeight = '22px';
+                AB.style.lineHeight = '24px';
                 AB.style.fontFamily = '"Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif';
             }
 
@@ -88,7 +88,7 @@ check.addEventListener('click', (e) => {
                 mudah disukai oleh banyak orang. Sayangnya, orang dengan golongan darah O ini mudah terpengaruh oleh orang lain, 
                 kurang fokus, keras kepala, dan lebih suka menjadi pengikut dibanding pemimpin.`;
                 O.style.textAlign = 'justify';
-                O.style.lineHeight = '22px';
+                O.style.lineHeight = '24px';
                 O.style.fontFamily = '"Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif';
             }
 
